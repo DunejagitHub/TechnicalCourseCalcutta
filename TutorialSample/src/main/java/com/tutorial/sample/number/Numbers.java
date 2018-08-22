@@ -32,22 +32,26 @@ public class Numbers {
 	}
 
 
-public List greaterNumber(int first, int second) {
+public int greaterNumber(int first, int second) {
 		
 		List numberList = new ArrayList();
 		
+		int greaterNumber= 0;
+		
 		if (first > second) {
-			numberList.add(first);
+			greaterNumber= first;
+			//numberList.add(first);
 			
 		}else if(first < second){
-			numberList.add(second);
+			greaterNumber= second;
+			
 			
 		} else {
-			numberList.add(first);
-			numberList.add(second);
+			greaterNumber=first;
+			
 		}
 		
-		return numberList;
+		return greaterNumber;
 	
 		
 	}

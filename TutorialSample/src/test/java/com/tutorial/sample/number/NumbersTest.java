@@ -51,8 +51,8 @@ public class NumbersTest {
 		int expectedValue = 10;
 		int actualValue ;
 		
-		List numberList = numObj.greaterNumber(10,5);
-		actualValue=(int) numberList.get(0);
+		
+		actualValue=numObj.greaterNumber(10,5);
 		assertEquals(expectedValue,actualValue);
 	}
 	
@@ -61,39 +61,31 @@ public class NumbersTest {
 		int expectedValue = 20;
 		int actualValue ;
 		
-		List numberList = numObj.greaterNumber(10,20);
-		actualValue=(int) numberList.get(0);
+		
+		actualValue=numObj.greaterNumber(10,20);
 		assertEquals(expectedValue,actualValue);
 			
 	}
 	
 	@Test
 	public void testGreaterNumber_When_Equal(){
-		int expectedValue = 2;
+		int expectedValue = 20;
 			
-		List numberList = numObj.greaterNumber(20,20);
-		assertEquals(expectedValue,numberList.size());
+		int actualValue ;
+		actualValue=numObj.greaterNumber(10,20);
+		assertEquals(expectedValue,actualValue);
 		
 			
 	}
 	
-	@Test
-	public void testGreaterNumber_HardCoding_Check(){
-		int expectedValue = 100;
-		int actualValue ;
-		
-		List numberList = numObj.greaterNumber(100,77);
-		actualValue=(int) numberList.get(0);
-		assertEquals(expectedValue,actualValue);
-	}
+	
 	
 	@Test
 	public void testGreaterNumber_Negative_Numbers(){
 		int expectedValue = -77;
 		int actualValue ;
 		
-		List numberList = numObj.greaterNumber(-100,-77);
-		actualValue=(int) numberList.get(0);
+		actualValue=numObj.greaterNumber(-100,-77);
 		assertEquals(expectedValue,actualValue);
 	}
 	
@@ -102,18 +94,18 @@ public class NumbersTest {
 		int expectedValue = 100;
 		int actualValue ;
 		
-		List numberList = numObj.greaterNumber(100,-77);
-		actualValue=(int) numberList.get(0);
+		//List numberList = numObj.greaterNumber(100,-77);
+		actualValue=numObj.greaterNumber(100,-77);
 		assertEquals(expectedValue,actualValue);
 	}
 	
 	@Test
 	public void testGreaterNumber_Zero(){
-		int expectedValue = 2;
+		int expectedValue = 0;
 		int actualValue ;
 		
-		List numberList = numObj.greaterNumber(0,0);
-		actualValue=numberList.size();
+		//List numberList = numObj.greaterNumber(0,0);
+		actualValue=numObj.greaterNumber(0,0);
 		assertEquals(expectedValue,actualValue);
 	}
 	
