@@ -16,7 +16,7 @@ public class EmployeeFinanceService {
 		
 		if(grossSalary <= 0){ return 0.0;}
 		
-		if (grossSalary>100000){
+		if (grossSalary>10000){
 			basicPay=grossSalary*0.4;
 		}else {
 			basicPay=grossSalary*0.2;
